@@ -12,7 +12,7 @@ export default function Page() {
                 Abbas Portfolio
               </span>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               {['Home', 'About', 'Services', 'Projects', 'Testimonials', 'Contact'].map((item) => (
                 <a 
                   key={item} 
@@ -22,6 +22,20 @@ export default function Page() {
                   {item}
                 </a>
               ))}
+              
+              {/* Bhatti-GPT AI Button */}
+              <a 
+                href={process.env.NEXT_PUBLIC_CHAT_URL || "https://bhatti-gpt-2.vercel.app"} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white font-bold text-xs uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-lg"
+              >
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Bhatti-GPT AI
+              </a>
             </div>
           </div>
         </div>
@@ -47,7 +61,6 @@ export default function Page() {
               </button>
             </div>
           </div>
-          {/* Decorative Background Element */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-10 pointer-events-none">
             <img 
               src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000" 
@@ -141,7 +154,7 @@ export default function Page() {
           </div>
         </section>
 
-        {/* 6. Our Team (Projects/Team Representation) */}
+        {/* 6. Projects Section */}
         <section id="projects" className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-black text-center mb-16 uppercase tracking-tighter">The Agent Ecosystem</h2>
@@ -192,7 +205,7 @@ export default function Page() {
           </div>
         </section>
 
-        {/* 8. Consultation Process Section */}
+        {/* 8. Automation Roadmap Section */}
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-black text-center mb-20 uppercase tracking-tighter text-slate-900">Automation Roadmap</h2>
@@ -257,13 +270,13 @@ export default function Page() {
                 </div>
               </div>
               <a 
-  href="https://wa.me/923010637955" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="inline-block bg-white text-indigo-600 px-12 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform text-center"
->
-  Book My Discovery Call
-</a>
+                href="https://wa.me/923010637955" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-indigo-600 px-12 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform text-center"
+              >
+                Book My Discovery Call
+              </a>
             </div>
           </div>
         </section>
@@ -276,7 +289,6 @@ export default function Page() {
             <span className="text-2xl font-black text-white tracking-tighter uppercase">Abbas Portfolio</span>
             <div className="flex space-x-8 text-xs font-bold uppercase tracking-widest">
               <a href="https://github.com/iqbalchudhary-maker" className="hover:text-indigo-400 transition-colors">GitHub</a>
-             
               <a href="https://vercel.com/ghulam-abbas-bhattis-projects" className="hover:text-indigo-400 transition-colors">vercel</a>
             </div>
           </div>
